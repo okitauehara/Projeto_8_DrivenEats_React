@@ -21,8 +21,8 @@ export default function Modal() {
                     <div className="preco">R$ 30,80</div>
                 </li>
             </ul>
-            <button className="confirmar" onclick="enviarZap()">Tudo certo, pode pedir!</button>
-            <button className="cancelar" onclick="cancelarPedido()">Cancelar</button>
+            <button className="confirmar">Tudo certo, pode pedir!</button>
+            <button className="cancelar">Cancelar</button>
         </div>
     </div>
     );

@@ -35,13 +35,13 @@ const sobremesas = [
 
 export default function Sobremesas() {
     return (
-    <div class="secao">
-        <div class="titulo">Por fim, sua sobremesa</div>
-        <div class="opcoes sobremesa">
+    <div className="secao">
+        <div className="titulo">Por fim, sua sobremesa</div>
+        <div className="opcoes sobremesa">
             {sobremesas.map((sobremesa, index) => (
                 <Sobremesa
                 key={index}
-                image={sobremesa.imagem}
+                imagem={sobremesa.imagem}
                 nome={sobremesa.nome}
                 descricao={sobremesa.descricao}
                 preco={sobremesa.preco}

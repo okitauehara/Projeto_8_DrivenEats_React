@@ -35,9 +35,9 @@ const bebidas = [
 
 export default function Bebidas() {
     return (
-    <div class="secao">
-        <div class="titulo">Agora, sua bebida</div>
-        <div class="opcoes bebida">
+    <div className="secao">
+        <div className="titulo">Agora, sua bebida</div>
+        <div className="opcoes bebida">
           {bebidas.map((bebida, index) =>(
               <Bebida
               key={index}
