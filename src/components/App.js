@@ -1,7 +1,7 @@
-import Modal from "./Modal.js";
-import Header from "./Header.js";
-import Menu from "./Menu.js";
-import Footer from "./Footer.js";
+import Modal from "./Modal";
+import Header from "./Header";
+import Menu from "./Menu";
+import Footer from "./Footer";
 
 export default function App() {
     return (

@@ -1,6 +1,6 @@
-import Pratos from "./Pratos.js";
-import Bebidas from "./Bebidas.js";
-import Sobremesas from "./Sobremesas.js";
+import Pratos from "./Pratos";
+import Bebidas from "./Bebidas";
+import Sobremesas from "./Sobremesas";
 
 export default function Menu() {
     return (

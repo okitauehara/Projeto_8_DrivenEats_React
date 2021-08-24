@@ -1,4 +1,4 @@
-import Prato from "./Prato.js";
+import Prato from "./Prato";
 
 const pratos = [
     {
@@ -30,7 +30,7 @@ const pratos = [
         nome: "Temaki de Salmão",
         descricao: "Acompanhamento de gengibre e wasabi",
         preco: "R$ 21,90"
-    },
+    }
 ];
 
 export default function Pratos() {
