@@ -150,7 +150,7 @@ body {
   font-weight: bold;
 }
 
-.overlay {
+.modal {
   width: 100vw;
   height: 100vh;
   position: fixed;
