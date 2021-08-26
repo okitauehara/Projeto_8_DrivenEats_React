@@ -1,13 +1,16 @@
+import React from "react";
+
 export default function Sobremesa(props) {
     const {
         imagem,
         nome,
         descricao,
         preco
-    } = props
+    } = props;
+    const [selecionado, setSelecionado] = React.useState('');
 
     return (
-    <div className="opcao">
+    <div className={`opcao ${selecionado}`} onClick={() => setSelecionado('selecionado')}>
         <img src={imagem} />
         <div className="titulo">{nome}</div>
         <div className="descricao">{descricao}</div>
