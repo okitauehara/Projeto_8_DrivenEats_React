@@ -100,13 +100,22 @@ body {
   font-size: 16px;
 }
 
-.menu .secao .opcoes .opcao .check {
+.menu .secao .opcoes .opcao .contador {
   opacity: 0;
-  color: #32B72F;
-  font-size: 20px;
+  display: flex;
 }
 
-.menu .secao .opcoes .opcao.selecionado .check {
+.menu .secao .opcoes .opcao .contador .diminuir {
+  color:#CF2B2B;
+  margin-right: 10px;
+}
+
+.menu .secao .opcoes .opcao .contador .aumentar {
+  color: #32B72F;
+  margin-left: 10px;
+}
+
+.menu .secao .opcoes .opcao.selecionado .contador {
   opacity: 1;
 }
 

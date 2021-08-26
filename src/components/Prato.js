@@ -13,8 +13,10 @@ export default function Prato(props) {
         <div className="descricao">{descricao}</div>
         <div className="fundo">
             <div className="preco">{preco}</div>
-            <div className="check">
-                <ion-icon name="checkmark-circle"></ion-icon>
+            <div className="contador">
+                <div className="diminuir">-</div>
+                <div className="quantidade">1</div>
+                <div className="aumentar">+</div>
             </div>
         </div>
     </div>
