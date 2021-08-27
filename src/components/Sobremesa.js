@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export default function Sobremesa(props) {
     const {
         imagem,
+        alt,
         nome,
         descricao,
         preco
@@ -32,7 +33,7 @@ export default function Sobremesa(props) {
 
     return (
     <div className={`opcao ${selecionado}`} onClick={selecionar}>
-        <img src={imagem} />
+        <img src={imagem} alt={alt}/>
         <div className="titulo">{nome}</div>
         <div className="descricao">{descricao}</div>
         <div className="fundo">
