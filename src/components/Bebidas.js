@@ -1,4 +1,4 @@
-import Bebida from "./Bebida";
+import Opcao from "./Opcao";
 
 const bebidas = [
     {
@@ -44,7 +44,7 @@ export default function Bebidas() {
         <div className="titulo">Agora, sua bebida</div>
         <div className="opcoes bebida">
           {bebidas.map((bebida, index) =>(
-              <Bebida
+              <Opcao
               key={index}
               imagem={bebida.imagem}
               alt={bebida.alt}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Bebida(props) {
+export default function Opcao(props) {
     const {
         imagem,
         alt,

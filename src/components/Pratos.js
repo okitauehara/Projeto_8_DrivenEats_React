@@ -1,5 +1,5 @@
 import React from "react";
-import Prato from "./Prato";
+import Opcao from "./Opcao";
 
 const pratos = [
     {
@@ -46,7 +46,7 @@ export default function Pratos() {
         <div className="titulo">Primeiro, seu prato</div>
             <div className="opcoes prato">
                 {pratos.map((prato, index) => (
-                <Prato
+                <Opcao
                 key={index}
                 imagem={prato.imagem}
                 alt={prato.alt}

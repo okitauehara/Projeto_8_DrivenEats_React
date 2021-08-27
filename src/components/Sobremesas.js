@@ -1,4 +1,4 @@
-import Sobremesa from "./Sobremesa";
+import Opcao from "./Opcao";
 
 const sobremesas = [
     {
@@ -44,7 +44,7 @@ export default function Sobremesas() {
         <div className="titulo">Por fim, sua sobremesa</div>
         <div className="opcoes sobremesa">
             {sobremesas.map((sobremesa, index) => (
-                <Sobremesa
+                <Opcao
                 key={index}
                 imagem={sobremesa.imagem}
                 alt={sobremesa.alt}
