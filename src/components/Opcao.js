@@ -1,47 +1,48 @@
 import React, { useState } from "react";
 
-export default function Opcao(props) {
-    const {
-        imagem,
-        alt,
-        nome,
-        descricao,
-        preco
-    } = props;
+export default function Opcao({
+    imagem,
+    alt,
+    nome,
+    descricao,
+    preco,
+    numero,
+    quantidade,
+    aumentar,
+    diminuir
+}) {
+
     const [selecionado, setSelecionado] = useState('opcao');
-    const [contador, setContador] = useState(1);
 
     function selecionar() {
-        setSelecionado('opcao selecionado');
-    }
-
-    function desmarcar() {
-        setSelecionado('opcao');
-    }
-
-    function diminuir() {
-        if (contador === 1) {
-            setSelecionado(desmarcar);
+        if (selecionado === 'opcao') {
+            setSelecionado('opcao selecionado');
+            aumentar(numero);
         } else {
-            setContador(contador - 1);
+            return;
+        }
+    }
+    
+    function checarQuantidade() {
+        if (quantidade[numero] === 1) {
+            setSelecionado('opcao');
+            diminuir(numero);
+        } else {
+            diminuir(numero);
         }
     }
 
-    function aumentar() {
-        setContador(contador + 1);
-    }
-
     return (
-    <div className={selecionado} onClick={selecionar}>
+    <div id={numero} className={selecionado} onClick={selecionar}>
         <img src={imagem} alt={alt}/>
         <div className="titulo">{nome}</div>
         <div className="descricao">{descricao}</div>
         <div className="fundo">
-            <div className="preco">{preco}</div>
+            <div className="preco">R$ {preco}</div>
             <div className="contador">
-                <div className="diminuir" onClick={diminuir}>-</div>
-                <div className="quantidade">{contador}</div>
-                <div className="aumentar" onClick={aumentar}>+</div>
+                <div className="diminuir" onClick={checarQuantidade}>-</div>
+                <div className="quantidade">{quantidade[numero]}</div>
+                <div className="aumentar" onClick={() => aumentar(numero)}>+</div>
             </div>
         </div>
     </div>
