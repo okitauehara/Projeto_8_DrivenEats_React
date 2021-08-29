@@ -8,15 +8,15 @@ export default function Opcao(props) {
         descricao,
         preco
     } = props;
-    const [selecionado, setSelecionado] = useState('');
+    const [selecionado, setSelecionado] = useState('opcao');
     const [contador, setContador] = useState(1);
 
     function selecionar() {
-        setSelecionado('selecionado');
+        setSelecionado('opcao selecionado');
     }
 
     function desmarcar() {
-        setSelecionado('');
+        setSelecionado('opcao');
     }
 
     function diminuir() {
@@ -32,7 +32,7 @@ export default function Opcao(props) {
     }
 
     return (
-    <div className={`opcao ${selecionado}`} onClick={selecionar}>
+    <div className={selecionado} onClick={selecionar}>
         <img src={imagem} alt={alt}/>
         <div className="titulo">{nome}</div>
         <div className="descricao">{descricao}</div>
