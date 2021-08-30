@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Opcao({
     imagem,
@@ -12,7 +12,7 @@ export default function Opcao({
     diminuir
 }) {
 
-    const [selecionado, setSelecionado] = useState('opcao');
+    const [selecionado, setSelecionado] = React.useState('opcao');
 
     function selecionar() {
         if (selecionado === 'opcao') {
